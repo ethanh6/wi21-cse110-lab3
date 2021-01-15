@@ -13,7 +13,14 @@
         <nav>
             <ol>
                 <li><a href="#"> Main page</a></li>
-                <li><a href="#"> Example of python Code</a></li>
+                <li><a href="#music"> Music</a></li>
+                <li><a href="#video"> Dog Video</a></li>
+                <li><a href="#dog"> Dog Image</a></li>
+                <li><a href="#my_github"> My github page link</a></li>
+                <li><a href="#abc"> A button example</a></li>
+                <li><a href="#dif_texts"> Different style of texts</a></li>
+                <li><a href="#python_code"> Example of python Code</a></li>
+                <li><a href="#django_article"> Introduction of Django</a></li>
                 <li><a href="#"> Example of different style of text</a></li>
             </ol>
         </nav>
@@ -24,20 +31,29 @@
     <h2>My favorite Language is python.</h2>
     <hr>
 
-    <h3> My favorite animal is dog!<br>
+    <h2 id="music">The music will not play automatically.</h2>
+    <audio controls loop src="music.mp3">Play music!</audio>
+    <hr>
+
+
+    <h3 id="dog"> My favorite animal is dog!<br>
         <img src="https://i.insider.com/5ef54cb61918242cfb4ec653?width=1000&format=jpeg&auto=webp" alt="Dog" width="400"
             height="284">
     </h3>
-    <br>
     <hr>
 
-    <h2> It's a link to <a href="https://github.com/ethanh6">My github page</a></h2>
+    <h2 id="video">This video will start automatically!</h2>
+    <video id="video" width="640" height="380" autoplay controls loop src="video.mp4"></video>
     <hr>
 
-    <h2><button>It's a button to click</button></h2> <br>
+
+    <h2 id="my_github"> It's a link to <a href="https://github.com/ethanh6">My github page</a></h2>
     <hr>
 
-    <h2>An list of different style of texts</h2>
+    <h2><button id="abc">It's a button to click</button></h2> <br>
+    <hr>
+
+    <h2 id="dif_texts">An list of different style of texts</h2>
     <ul>
         <li><b>Bold Text</b></li>
         <li><i>Italic Text</i></li>
@@ -53,64 +69,75 @@
 
 
 
-<br>
-<hr>
+    <br>
+    <hr>
 
-<h2>Code example using python:</h2>
-<h3>
-    <code>
+    <h2>Simple python code example</h2>
+    <h3>
+        <code id="python_code">
     x = 4 <br>
     y = 9 <br>
-    print(x + y) # python should output 13 <br>
+    print(x + y) # python should output 13
 </code>
-</h3>
+    </h3>
 
-<hr>
+    <hr>
 
-<article>
-    <h1>An article introducing Django.</h1>
-    <blockquote>
-        Django makes it easier to build better Web apps more quickly and with less code.
-    </blockquote>
-    <section>
-        <h3>Section 1: Introduction of Django</h3>
-        <p>
-            Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
-            Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on
-            writing your app without needing to reinvent the wheel. It’s free and open source.
-        </p>
-        <p>
-            This introduction is copied form <a href="https://www.djangoproject.com/">django website</a>
-        </p>
-    </section>
+    <article id="django_article">
+        <h1>An article introducing Django.</h1>
+        <blockquote>
+            Django makes it easier to build better Web apps more quickly and with less code.
+        </blockquote>
+        <section>
+            <h3>Section 1: Introduction of Django</h3>
+            <p>
+                Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic
+                design.
+                Built by experienced developers, it takes care of much of the hassle of Web development, so you can
+                focus on
+                writing your app without needing to reinvent the wheel. It’s free and open source.
+            </p>
+            <p>
+                This introduction is copied form <a href="https://www.djangoproject.com/">django website</a>
+            </p>
+        </section>
 
-    <section>
-        <h3>Section 2: Django at a glance</h3>
-        <p>
-            Because Django was developed in a fast-paced newsroom environment, it was designed to make common
-            Web-development tasks fast and easy. Here’s an informal overview of how to write a database-driven Web app
-            with Django.
-        </p>
-        <p>This text is copied from <a href="https://docs.djangoproject.com/en/3.1/intro/overview/">django
-                documentation</a></p>
-    </section>
-</article>
-<aside>
-    <h1>Other popular web framworks:</h1>
-    <ol>
-        <li><a href="https://vuejs.org/">Vue.js</a></li>
-        <li><a href="https://reactjs.org/">React.js</a></li>
-        <li><a href="https://angular.io/">Angular</a></li>
-        <li><a href="https://expressjs.com/">Express</a></li>
-        <li><a href="https://spring.io/projects/spring-framework">Spring</a></li>
-        <li><a href="https://laravel.com/">Laravel</a></li>
-        <li><a href="https://palletsprojects.com/p/flask/">Flask</a></li>
-    </ol>
-</aside>
+        <section>
+            <h3>Section 2: Django at a glance</h3>
+            <p>
+                Because Django was developed in a fast-paced newsroom environment, it was designed to make common
+                Web-development tasks fast and easy. Here’s an informal overview of how to write a database-driven Web
+                app
+                with Django.
+            </p>
+            <p>This text is copied from <a href="https://docs.djangoproject.com/en/3.1/intro/overview/">django
+                    documentation</a></p>
+        </section>
+    </article>
 
-<hr>
+    <hr>
 
-<footer>Footer: This page is created by Ethan Huang at 1/16/2021, for CSE110 lab2.</footer>
+    <aside>
+        <h1>Check out other popular web framworks:</h1>
+        <ol>
+            <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
+            <li><a href="https://reactjs.org/" target="_blank">React.js</a></li>
+            <li><a href="https://angular.io/" target="_blank">Angular</a></li>
+            <li><a href="https://expressjs.com/" target="_blank">Express</a></li>
+            <li><a href="https://spring.io/projects/spring-framework" target="_blank">Spring</a></li>
+            <li><a href="https://laravel.com/" target="_blank">Laravel</a></li>
+            <li><a href="https://palletsprojects.com/p/flask/" target="_blank">Flask</a></li>
+        </ol>
+    </aside>
+
+    <hr>
+
+    <h2><a href="#">Go to top of this page</a></h2>
+
+    <hr>
+
+    <footer>Footer: This page is created by Ethan Huang at 1/16/2021, for CSE110 lab2.</footer>
 
 </body>
+
 </html>
