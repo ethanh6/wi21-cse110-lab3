@@ -19,9 +19,10 @@
                 <li><a href="#my_github"> My github page link</a></li>
                 <li><a href="#abc"> A button example</a></li>
                 <li><a href="#dif_texts"> Different style of texts</a></li>
+                <li><a href="#table"> Table example</a></li>
+                <li><a href="#form"> Form example</a></li>
                 <li><a href="#python_code"> Example of python Code</a></li>
                 <li><a href="#django_article"> Introduction of Django</a></li>
-                <li><a href="#"> Example of different style of text</a></li>
             </ol>
         </nav>
     </header>
@@ -66,20 +67,116 @@
         <li>This is<sup>superscript</sup></li>
         <li>This is<sub>subscript</sub></li>
     </ul>
-
-
-
     <br>
     <hr>
 
-    <h2>Simple python code example</h2>
-    <h3>
-        <code id="python_code">
-    x = 4 <br>
-    y = 9 <br>
-    print(x + y) # python should output 13
-</code>
-    </h3>
+    <h2 id="table">It's a HTML table</h2>
+    <table border="1" width="85%" cellspacing="5" cellpadding="5">
+        <tr>
+            <th>Row 1</th>
+            <th>Row 2</th>
+        </tr>
+        <tr>
+            <th>Element 1</th>
+            <th>Element 2</th>
+        </tr>
+        <tr>
+            <th>Element 3</th>
+            <th>Element 4</th>
+        </tr>
+    </table>
+    <hr>
+
+    <h2 id="form">It's a simple HTML form</h2>
+    <fieldset>
+        <legend>Login Information</legend>
+        <form>
+            <ol>
+                <li>
+                    <p><label for="username">Username:</label> <input type="text" name="username" id="username"></p>
+                </li>
+                <li>
+                    <p><label for="password">Password:</label> <input type="password" name="password" id="password"></p>
+                </li>
+                <li>
+                    <p><label for="phone">Phone: </label> <input type="tel" name="phone" id="phone"></p>
+                </li>
+                <li>
+                    <p><label for="url">Website: </label> <input type="url" name="url" id="url"></p>
+                </li>
+                <li>
+                    <p><label for="email">Email: </label> <input type="email" name="email" id="email"></p>
+                </li>
+                <li>
+                    <p><label for="date">Date: </label> <input type="Date" name="date" id="date"></p>
+                </li>
+                <li>
+                    <p><label for="time">Time: </label> <input type="Time" name="time" id="time"></p>
+                </li>
+                <li>
+                    <p><label for="age">Age: </label> <input type="number" name="age" id="age"></p>
+                </li>
+                <li>
+                    <p><label for="color">Hair color: </label> <input type="color" name="hair_color" id="color"></p>
+                </li>
+                <li>
+                    <p>Sex:
+                        <input type="radio" name="gender" id="male"><label for="male"> Male</label>
+                        <input type="radio" name="gender" id="female"><label for="female"> Female</label>
+                    </p>
+                </li>
+
+                <li>
+                    <p>Major:
+                        <input type="checkbox" name="major" id="cs"><label for="cs"> Computer Science</label>
+                        <input type="checkbox" name="major" id="cogs"><label for="cogs"> Cognitive Science</label>
+                        <input type="checkbox" name="major" id="math"><label for="math"> Math</label>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Your school:
+                        <select name="School">
+                            <option value="ucsd">UCSD</option>
+                            <option value="ucla">UCLA</option>
+                            <option value="uci">UCI</option>
+                            <option value="ucb">UCB</option>
+                            <option value="ucsb">UCSB</option>
+                        </select>
+                    </p>
+                </li>
+
+                <li>
+                    <p>Your happiness range</p>
+                    <input type="range" name="range" id="range">
+                </li>
+
+                <li>
+                    <p>
+                        Your feedback here:
+                    </p>
+                    <textarea name="opinion" id="opinion" cols="100" rows="10">enter your feedback here</textarea>
+                </li>
+
+
+                <p><input type="submit" value="submit"><input type="reset" value="reset"></p>
+            </ol>
+    </fieldset>
+    </form>
+
+    <hr>
+
+    <h2 id="python_code">My first python code</h2>
+    <p>My first python code is <code>print("hello world")</code> and it's good.</p>
+
+    <p>Put a block of python code here</p>
+    <pre>
+        n = 0
+        for i in range(10):
+            n += i
+        print(n)  # 45
+    </pre>
 
     <hr>
 
