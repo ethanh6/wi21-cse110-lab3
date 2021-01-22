@@ -1,0 +1,29 @@
+/* this is comment */
+
+/* universal selector */
+* {
+  text-align: center;
+}
+
+/* class selector */
+.table_of_content {
+  text-align: left;
+}
+
+body {
+  background-color: lightblue;
+}
+
+nav {
+  color: blue;
+  border: 2px solid Tomato;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
