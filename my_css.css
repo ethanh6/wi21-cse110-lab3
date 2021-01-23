@@ -3,27 +3,186 @@
 /* universal selector */
 * {
   text-align: center;
+  font-family: Arial;
 }
 
-/* class selector */
-.table_of_content {
-  text-align: left;
-}
-
+/* element selector */
 body {
   background-color: lightblue;
 }
 
+/* class selector */
+nav.t1 {
+  text-align: left;
+  font-size: 0.4cm;
+  border: 2mm solid Tomato;
+  background-color: khaki;
+}
+
+/* id selector */
+#toc {
+  color: rgb(rgb(17, 6, 6), rgb(19, 112, 19), blue);
+  border: 2ex solid Tomato;
+}
+
 nav {
-  color: blue;
-  border: 2px solid Tomato;
+  color: rgba(red, rgb(26, 155, 26), blue, alpha);
+  /* different unit */
+  border: 2mm solid Tomato;
 }
 
 h1 {
-  color: white;
+  color: #ff0000;
 }
 
 p {
   font-family: verdana;
   font-size: 20px;
+}
+
+/* Attribute Selector */
+img[alt] {
+  border: 2px solid #ff032f;
+}
+
+a[href] {
+  color: hsl(50, 60, 60);
+}
+
+/* Pseudo-class Selectors  */
+a:visited {
+  color: hsla(50, 50, 50, 0.5);
+}
+
+a:hover {
+  color: blue;
+  border: 2px solid tomato;
+}
+
+a:active {
+  color: yellow;
+}
+
+button:enabled {
+  border: 2px solid red;
+}
+
+button:disabled {
+  border: 2px solid white;
+}
+
+/* pseudo-elements */
+p::first-line {
+  background-color: yellowgreen;
+}
+
+/* selector list */
+h2,
+h3 {
+  color: white;
+}
+
+blockquote {
+  border: 2px solid white;
+}
+
+/* Descendant Selector */
+div p {
+  background-color: wheat;
+  border: 2rem solid white;
+}
+
+/* child selector */
+div > h3 {
+  border: 2em solid seagreen;
+}
+
+/* Adjacent Sibling Selector (+) */
+div + blockquote {
+  /* this applies to "time is money" */
+  background-color: springgreen;
+  font-size: 40;
+}
+
+/* General Sibling Selector (~) */
+div ~ h2 {
+  background-color: tomato;
+  border-style: groove;
+  border-color: violet;
+  border-width: 3px;
+}
+
+h2.c3 {
+  /* text-decoration */
+  text-decoration: underline;
+  text-align: start;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: block;
+}
+
+h2.c4 {
+  display: block;
+  text-align: center;
+}
+
+h2.c5 {
+  font-family: "Potta One", cursive;
+  display: none;
+}
+
+.box1 {
+  width: 80%;
+  height: 400px;
+  max-width: 1000px;
+  min-width: 300px;
+  font-family: "Potta One", cursive;
+  font-size: 60px;
+  overflow: scroll;
+  background-color: lavender;
+  padding: 100px 100px 100px 100px;
+  margin: 100px 100px 100px 100px;
+  border: 10px solid black;
+  position: relative;
+  top: 70px;
+  left: 70px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: dodgerblue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 60px;
+}
+
+/* --------------------------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 25% 100px auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: rgb(228, 215, 43);
+  }
 }
