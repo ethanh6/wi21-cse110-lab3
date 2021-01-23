@@ -109,7 +109,8 @@ div ~ h2 {
   background-color: tomato;
   border-style: groove;
   border-color: violet;
-  border-width: 3px;
+  border-width: 3ch;
+  border-radius: 0.5cm;
 }
 
 h2.c3 {
@@ -131,6 +132,7 @@ h2.c5 {
   display: none;
 }
 
+/* box model */
 .box1 {
   width: 80%;
   height: 400px;
@@ -148,6 +150,7 @@ h2.c5 {
   left: 70px;
 }
 
+/* flex */
 .flex-container {
   display: flex;
   flex-direction: row-reverse;
@@ -160,10 +163,10 @@ h2.c5 {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
-  font-size: 60px;
+  font-size: 90%;
 }
 
-/* --------------------------- */
+/* grid */
 
 .grid-container {
   display: grid;
@@ -181,7 +184,8 @@ h2.c5 {
 }
 
 
-@media only screen and (max-width: 800px) {
+/* media query */
+@media only screen and (max-width: 1500px) {
   body {
     background-color: rgb(228, 215, 43);
   }
