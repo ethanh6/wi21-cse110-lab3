@@ -1,182 +1,263 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>This is for CSE110 Lab3</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <style>
-        #music {color:blueviolet;}
+      #music {
+        color: blueviolet;
+      }
     </style>
-    <link rel="stylesheet" href="my_css.css">
-</head>
+    <link rel="stylesheet" href="my_css.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Ethan Huang's User Page</h1>
-        <nav class="table_of_content">
-            <ol class="table_of_content">
-                <li><a href="#"> Main page</a></li>
-                <li><a href="#music"> Music</a></li>
-                <li><a href="#video"> Dog Video</a></li>
-                <li><a href="#dog"> Dog Image</a></li>
-                <li><a href="#my_github"> My github page link</a></li>
-                <li><a href="#abc"> A button example</a></li>
-                <li><a href="#dif_texts"> Different style of texts</a></li>
-                <li><a href="#table"> Table example</a></li>
-                <li><a href="#form"> Form example</a></li>
-                <li><a href="#python_code"> Example of python Code</a></li>
-                <li><a href="#django_article"> Introduction of Django</a></li>
-            </ol>
-        </nav>
+      <h1>Ethan Huang's User Page</h1>
+      <nav class="t1">
+        <h2 id="toc">Table of Content:</h2>
+        <ol class="t1">
+          <li class="t1"><a href="#"> Main page</a></li>
+          <li class="t1"><a href="#music"> Music</a></li>
+          <li class="t1"><a href="#video"> Dog Video</a></li>
+          <li class="t1"><a href="#dog"> Dog Image</a></li>
+          <li class="t1"><a href="#my_github"> My github page link</a></li>
+          <li class="t1"><a href="#abc"> A button example</a></li>
+          <li class="t1"><a href="#dif_texts"> Different style of texts</a></li>
+          <li class="t1"><a href="#table"> Table example</a></li>
+          <li class="t1"><a href="#form"> Form example</a></li>
+          <li class="t1"><a href="#python_code"> Example of python Code</a></li>
+          <li class="t1">
+            <a href="#django_article"> Introduction of Django</a>
+          </li>
+        </ol>
+      </nav>
     </header>
-    <hr>
+    <hr />
 
-    <h2 style="color:white">Update: I use CSS!</h2>
-    <hr>
+    <h2 style="color: white" class="c3">Update: I use CSS!</h2>
+    <hr />
+    <h2 style="color: white" class="c4">Update: I use CSS!</h2>
+    <hr />
+    <h2 style="color: white" class="c5">Update: I use CSS!</h2>
+    <hr />
 
-    <h2 style="color:#ff0000">My favorite Language is python.</h2>
-    <hr>
+    <h2 style="color: #ff0000">My favorite Language is python.</h2>
+    <hr />
 
     <h2 id="music">The music will not play automatically.</h2>
     <audio controls loop src="music.mp3">Play music!</audio>
-    <hr>
+    <hr />
 
-
-    <h3 id="dog"> My favorite animal is dog!<br>
-        <img src="https://i.insider.com/5ef54cb61918242cfb4ec653?width=1000&format=jpeg&auto=webp" alt="Dog" width="400"
-            height="284">
+    <h3 id="dog">
+      My favorite animal is dog!<br />
+      <img
+        src="https://i.insider.com/5ef54cb61918242cfb4ec653?width=1000&format=jpeg&auto=webp"
+        alt="Dog"
+        width="400"
+        height="284"
+        alt="Dog"
+      />
     </h3>
-    <hr>
+    <hr />
 
     <h2 id="video">This video will start automatically!</h2>
-    <video width="640" height="380" autoplay controls loop src="video.mp4"></video>
-    <hr>
+    <video
+      width="640"
+      height="380"
+      autoplay
+      controls
+      loop
+      src="video.mp4"
+    ></video>
+    <hr />
 
+    <h2 id="my_github">
+      It's a link to
+      <a href="https://github.com/ethanh6" target="_blank">My github page</a>
+    </h2>
+    <hr />
 
-    <h2 id="my_github"> It's a link to <a href="https://github.com/ethanh6" target="_blank">My github page</a></h2>
-    <hr>
-
-    <h2><button id="abc">It's a button to click</button></h2> <br>
-    <hr>
+    <h2><button id="abc">It's a button to click</button></h2>
+    <br />
+    <hr />
 
     <h2 id="dif_texts">An list of different style of texts</h2>
     <ul>
-        <li><b>Bold Text</b></li>
-        <li><i>Italic Text</i></li>
-        <li><em>Emphasized Text</em></li>
-        <li><strong>Important Text</strong></li>
-        <li><mark>Marked Text</mark></li>
-        <li><small>Small Text</small></li>
-        <li><del>Deleted Text</del></li>
-        <li><ins>Inserted Text</ins></li>
-        <li>This is<sup>superscript</sup></li>
-        <li>This is<sub>subscript</sub></li>
+      <li><b>Bold Text</b></li>
+      <li><i>Italic Text</i></li>
+      <li><em>Emphasized Text</em></li>
+      <li><strong>Important Text</strong></li>
+      <li><mark>Marked Text</mark></li>
+      <li><small>Small Text</small></li>
+      <li><del>Deleted Text</del></li>
+      <li><ins>Inserted Text</ins></li>
+      <li>This is<sup>superscript</sup></li>
+      <li>This is<sub>subscript</sub></li>
     </ul>
-    <br>
-    <hr>
+    <br />
+    <hr />
 
     <h2 id="table">It's a HTML table</h2>
     <table>
-        <tr>
-            <th>Row 1</th>
-            <th>Row 2</th>
-        </tr>
-        <tr>
-            <th>Element 1</th>
-            <th>Element 2</th>
-        </tr>
-        <tr>
-            <th>Element 3</th>
-            <th>Element 4</th>
-        </tr>
+      <tr>
+        <th class="t2">Row 1</th>
+        <th class="t2">Row 2</th>
+      </tr>
+      <tr>
+        <td>Element 1</td>
+        <td>Element 2</td>
+      </tr>
+      <tr>
+        <td>Element 3</td>
+        <td>Element 4</td>
+      </tr>
+      <tr>
+        <td>Element 5</td>
+        <td>Element 6</td>
+      </tr>
     </table>
-    <br>
-    <hr>
+    <br />
+    <hr />
 
     <h2 id="form">It's a simple HTML form</h2>
     <fieldset>
-        <legend>Login Information</legend>
-        <form>
-            <ol>
-                <li>
-                    <p><label for="username">Username:</label> <input type="text" name="username" id="username"></p>
-                </li>
-                <li>
-                    <p><label for="password">Password:</label> <input type="password" name="password" id="password"></p>
-                </li>
-                <li>
-                    <p><label for="phone">Phone: </label> <input type="tel" name="phone" id="phone"></p>
-                </li>
-                <li>
-                    <p><label for="url">Website: </label> <input type="url" name="url" id="url"></p>
-                </li>
-                <li>
-                    <p><label for="email">Email: </label> <input type="email" name="email" id="email"></p>
-                </li>
-                <li>
-                    <p><label for="date">Date: </label> <input type="Date" name="date" id="date"></p>
-                </li>
-                <li>
-                    <p><label for="time">Time: </label> <input type="Time" name="time" id="time"></p>
-                </li>
-                <li>
-                    <p><label for="age">Age: </label> <input type="number" name="age" id="age"></p>
-                </li>
-                <li>
-                    <p><label for="color">Hair color: </label> <input type="color" name="hair_color" id="color"></p>
-                </li>
-                <li>
-                    <p>Sex:
-                        <input type="radio" name="gender" id="male"><label for="male"> Male</label>
-                        <input type="radio" name="gender" id="female"><label for="female"> Female</label>
-                    </p>
-                </li>
+      <legend>Login Information</legend>
+      <form>
+        <ol>
+          <li>
+            <p>
+              <label for="username">Username:</label>
+              <input type="text" name="username" id="username" />
+            </p>
+          </li>
+          <li>
+            <p>
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password" />
+            </p>
+          </li>
+          <li>
+            <p>
+              <label for="phone">Phone: </label>
+              <input type="tel" name="phone" id="phone" />
+            </p>
+          </li>
+          <li>
+            <p>
+              <label for="url">Website: </label>
+              <input type="url" name="url" id="url" />
+            </p>
+          </li>
+          <li>
+            <p>
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" />
+            </p>
+          </li>
+          <li>
+            <p>
+              <label for="date">Date: </label>
+              <input type="Date" name="date" id="date" />
+            </p>
+          </li>
+          <li>
+            <p>
+              <label for="time">Time: </label>
+              <input type="Time" name="time" id="time" />
+            </p>
+          </li>
+          <li>
+            <p>
+              <label for="age">Age: </label>
+              <input type="number" name="age" id="age" />
+            </p>
+          </li>
+          <li>
+            <p>
+              <label for="color">Hair color: </label>
+              <input type="color" name="hair_color" id="color" />
+            </p>
+          </li>
+          <li>
+            <p>
+              Sex: <input type="radio" name="gender" id="male" /><label
+                for="male"
+              >
+                Male</label
+              >
+              <input type="radio" name="gender" id="female" /><label
+                for="female"
+              >
+                Female</label
+              >
+            </p>
+          </li>
 
-                <li>
-                    <p>Major:
-                        <input type="checkbox" name="major" id="cs"><label for="cs"> Computer Science</label>
-                        <input type="checkbox" name="major" id="cogs"><label for="cogs"> Cognitive Science</label>
-                        <input type="checkbox" name="major" id="math"><label for="math"> Math</label>
-                    </p>
-                </li>
+          <li>
+            <p>
+              Major: <input type="checkbox" name="major" id="cs" /><label
+                for="cs"
+              >
+                Computer Science</label
+              >
+              <input type="checkbox" name="major" id="cogs" /><label for="cogs">
+                Cognitive Science</label
+              >
+              <input type="checkbox" name="major" id="math" /><label for="math">
+                Math</label
+              >
+            </p>
+          </li>
 
-                <li>
-                    <p>
-                        Your school:
-                        <select name="School">
-                            <option value="ucsd">UCSD</option>
-                            <option value="ucla">UCLA</option>
-                            <option value="uci">UCI</option>
-                            <option value="ucb">UCB</option>
-                            <option value="ucsb">UCSB</option>
-                        </select>
-                    </p>
-                </li>
+          <li>
+            <p>
+              Your school:
+              <select name="School">
+                <option value="ucsd">UCSD</option>
+                <option value="ucla">UCLA</option>
+                <option value="uci">UCI</option>
+                <option value="ucb">UCB</option>
+                <option value="ucsb">UCSB</option>
+              </select>
+            </p>
+          </li>
 
-                <li>
-                    <p>Your happiness range</p>
-                    <input type="range" name="range" id="range">
-                </li>
+          <li>
+            <p>Your happiness range</p>
+            <input type="range" name="range" id="range" />
+          </li>
 
-                <li>
-                    <p>
-                        Your feedback here:
-                    </p>
-                    <textarea name="opinion" id="opinion" cols="100" rows="10">enter your feedback here</textarea>
-                </li>
+          <li>
+            <p>Your feedback here:</p>
+            <textarea name="opinion" id="opinion" cols="100" rows="10">
+enter your feedback here</textarea
+            >
+          </li>
 
-
-                <li>
-                    <p><input type="submit" value="submit"><input type="reset" value="reset"></p>
-                </li>
-            </ol>
-        </form>
+          <li>
+            <p>
+              <input type="submit" value="submit" /><input
+                type="reset"
+                value="reset"
+              />
+            </p>
+          </li>
+        </ol>
+      </form>
     </fieldset>
 
-    <hr>
+    <hr />
 
     <h2 id="python_code">My first python code</h2>
-    <p>My first python code is <code>print("hello world")</code> and it's good.</p>
+    <p>
+      My first python code is <code>print("hello world")</code> and it's good.
+    </p>
 
     <p>Put a block of python code here</p>
     <pre>
@@ -186,63 +267,123 @@
         print(n)  # 45
     </pre>
 
-    <hr>
+    <hr />
 
     <article id="django_article">
-        <h2>An article introducing Django.</h2>
+      <h2>An article introducing Django.</h2>
+      <div>
         <blockquote>
-            Django makes it easier to build better Web apps more quickly and with less code.
+          Django makes it easier to build better Web apps more quickly and with
+          less code.
         </blockquote>
         <section>
-            <h3>Section 1: Introduction of Django</h3>
-            <p>
-                Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic
-                design.
-                Built by experienced developers, it takes care of much of the hassle of Web development, so you can
-                focus on
-                writing your app without needing to reinvent the wheel. It’s free and open source.
-            </p>
-            <p>
-                This introduction is copied form <a href="https://www.djangoproject.com/">django website</a>
-            </p>
+          <h3>Section 1: Introduction of Django</h3>
+          <p>
+            Django is a high-level Python Web framework that encourages rapid
+            development and clean, pragmatic design. Built by experienced
+            developers, it takes care of much of the hassle of Web development,
+            so you can focus on writing your app without needing to reinvent the
+            wheel. It’s free and open source.
+          </p>
+          <p>
+            This introduction is copied form
+            <a href="https://www.djangoproject.com/">django website</a>
+          </p>
         </section>
 
         <section>
-            <h3>Section 2: Django at a glance</h3>
-            <p>
-                Because Django was developed in a fast-paced newsroom environment, it was designed to make common
-                Web-development tasks fast and easy. Here’s an informal overview of how to write a database-driven Web
-                app
-                with Django.
-            </p>
-            <p>This text is copied from <a href="https://docs.djangoproject.com/en/3.1/intro/overview/">django
-                    documentation</a></p>
+          <h3>Section 2: Django at a glance</h3>
+          <p>
+            Because Django was developed in a fast-paced newsroom environment,
+            it was designed to make common Web-development tasks fast and easy.
+            Here’s an informal overview of how to write a database-driven Web
+            app with Django.
+          </p>
+          <p>
+            This text is copied from
+            <a href="https://docs.djangoproject.com/en/3.1/intro/overview/"
+              >django documentation</a
+            >
+          </p>
         </section>
+      </div>
+      <blockquote>Time is money.</blockquote>
+      <h2>This is sibling of div</h2>
     </article>
 
-    <hr>
+    <hr />
 
     <aside>
-        <h2>Check out other popular web framworks:</h2>
-        <ol>
-            <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
-            <li><a href="https://reactjs.org/" target="_blank">React.js</a></li>
-            <li><a href="https://angular.io/" target="_blank">Angular</a></li>
-            <li><a href="https://expressjs.com/" target="_blank">Express</a></li>
-            <li><a href="https://spring.io/projects/spring-framework" target="_blank">Spring</a></li>
-            <li><a href="https://laravel.com/" target="_blank">Laravel</a></li>
-            <li><a href="https://palletsprojects.com/p/flask/" target="_blank">Flask</a></li>
-        </ol>
+      <h2>Check out other popular web framworks:</h2>
+      <ol>
+        <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
+        <li><a href="https://reactjs.org/" target="_blank">React.js</a></li>
+        <li><a href="https://angular.io/" target="_blank">Angular</a></li>
+        <li><a href="https://expressjs.com/" target="_blank">Express</a></li>
+        <li>
+          <a href="https://spring.io/projects/spring-framework" target="_blank"
+            >Spring</a
+          >
+        </li>
+        <li><a href="https://laravel.com/" target="_blank">Laravel</a></li>
+        <li>
+          <a href="https://palletsprojects.com/p/flask/" target="_blank"
+            >Flask</a
+          >
+        </li>
+      </ol>
     </aside>
 
-    <hr>
+    <hr />
+
+    <div class="box1">
+      testtestestsetsetset testtestestsetsetset testtestestsetsetset
+      testtestestsetsetset testtestestsetsetset testtestestsetsetset
+      testtestestsetsetset testtestestsetsetset testtestestsetsetset
+      testtestestsetsetset testtestestsetsetset testtestestsetsetset
+      testtestestsetsetset testtestestsetsetset testtestestsetsetset
+      testtestestsetsetset testtestestsetsetset testtestestsetsetset
+      testtestestsetsetset testtestestsetsetset testtestestsetsetset
+      testtestestsetsetset testtestestsetsetset
+    </div>
+
+    <hr />
+
+    <div class="flex-container">
+      <div class="i1">div 1 block.</div>
+      <div class="i2">div 2 block.</div>
+      <div>div 3 block.</div>
+      <div>div 4 block.</div>
+      <div>div 5 block.</div>
+      <div>div 6 block.</div>
+      <div>div 7 block.</div>
+    </div>
+    <hr />
+
+
+    <h1>Grid Elements</h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+      </div>
 
     <h2><a href="#">Go to top of this page</a></h2>
 
-    <hr>
+    <hr />
 
-    <footer>Footer: This page is created by Ethan Huang at 1/16/2021, for CSE110 lab2.</footer>
-
-</body>
-
+    <footer>
+      Footer: This page is created by Ethan Huang at 1/16/2021, for CSE110 lab2.
+    </footer>
+  </body>
 </html>
